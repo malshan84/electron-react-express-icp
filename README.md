@@ -1,4 +1,4 @@
-# electron-react-express-icp
+# electron + react + express(router server) + icp
 ```
 npm install  
 npm start
