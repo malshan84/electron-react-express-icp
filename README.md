@@ -14,7 +14,7 @@ function createWindow() {
   
   RouteServer.createRouteServer(port, mainWindow);
   
-  RouteServer.getInstance().addEvent(GET_LOG, (req): any => {
+  RouteServer.getInstance().addEvent('eventName', (req): any => {
     return req.body;
   });
 ...
@@ -24,7 +24,7 @@ react app
 ```javascript
 import { listenEvent } from '../RouteClient';
 ...
-RouteServer.getInstance().addEvent(GET_LOG, (req): any => {
+RouteServer.getInstance().addEvent(eventName, (req): any => {
     return req.body;
 });
 ...
