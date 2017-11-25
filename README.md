@@ -25,7 +25,7 @@ react app
 import { listenEvent } from '../RouteClient';
 ...
 listenEvent('eventName', (args: any) => {
-  eventFunc(args);
+  console.log(args);
 });
 ...
 ```
