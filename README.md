@@ -24,8 +24,8 @@ react app
 ```javascript
 import { listenEvent } from '../RouteClient';
 ...
-RouteServer.getInstance().addEvent(eventName, (req): any => {
-    return req.body;
+listenEvent('eventName', (args: any) => {
+  eventFunc(args);
 });
 ...
 ```
