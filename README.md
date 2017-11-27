@@ -2,6 +2,7 @@
 ```
 npm install  
 npm start
+tcs
 ```
 # How to
 electron main
